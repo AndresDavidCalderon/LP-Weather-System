@@ -1,16 +1,11 @@
 
-=======
 extends Sprite2D
->>>>>>> Stashed changes
 class_name CloudDrawer
 ## Clouds are merely a visual representation of
 ## Humidity.saturated_water_per_area in the current area.
 
-
-=======
 ## The humidity where alpha reaches 1
 @export var max_humidity:float
->>>>>>> Stashed changes
 @export var max_clouds:int
 ## The size of cloud parts increases this much for every px squared of humidity
 @export var size_change_per_humidity:float
@@ -40,4 +35,4 @@ func update_size():
 func show_clouds(_area)->void:
 	var amount_of_water=humidity.get_saturated_water(area)
 	get_tree().create_tween().tween_property(self,"modulate:a",clamp((amount_of_water/max_humidity),0,100),0.5)
->>>>>>> Stashed changes
+

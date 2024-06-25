@@ -193,6 +193,7 @@ offset_bottom = 40.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_es8a2")
 
 [node name="Tick" type="Timer" parent="."]
+wait_time = 0.2
 autostart = true
 script = ExtResource("14_srnjo")
 
@@ -205,6 +206,7 @@ cloud_drawer = ExtResource("13_f5qil")
 
 [node name="RainManager" type="Node" parent="."]
 script = ExtResource("17_lcsua")
+start_raining_on_saturation = 10.0
 max_rain_height = -4
 moisture_loss = 0.5
 
