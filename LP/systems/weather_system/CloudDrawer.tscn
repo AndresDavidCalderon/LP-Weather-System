@@ -1,18 +1,4 @@
-<<<<<<< Updated upstream
-[gd_scene load_steps=3 format=3 uid="uid://k74yfm72apcb"]
 
-[ext_resource type="Script" path="res://systems/weather_system/CloudDrawer.gd" id="1_qyhpy"]
-[ext_resource type="Script" path="res://systems/weather_system/Movement.gd" id="2_b4d5l"]
-
-[node name="CloudDrawer" type="Node2D"]
-visible = false
-script = ExtResource("1_qyhpy")
-circle_radius = 300.0
-circle_sides = 10
-cloud_expansion_radius = 100.0
-cloud_primary_color = Color(1, 1, 1, 0.913725)
-cloud_secondary_color = Color(0.76662, 0.766619, 0.76662, 0.898039)
-=======
 [gd_scene load_steps=8 format=3 uid="uid://k74yfm72apcb"]
 
 [ext_resource type="Script" path="res://systems/weather_system/CloudDrawer.gd" id="1_qyhpy"]
@@ -50,12 +36,9 @@ cloud_parts = 40
 [node name="Movement" type="Node" parent="."]
 script = ExtResource("2_b4d5l")
 enabled = true
-<<<<<<< Updated upstream
 
 [node name="Clouds" type="Node2D" parent="."]
 
 [node name="Indicator" type="Polygon2D" parent="."]
 visible = false
 polygon = PackedVector2Array(-45, 23, 77, 23, 86, -7, 71, -17, 56, -11, 35, -24, 28, -40, 5, -45, -3, -28, -23, -45, -37, -43, -46, -16)
-=======
->>>>>>> Stashed changes

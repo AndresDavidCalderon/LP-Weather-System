@@ -7,13 +7,6 @@ class_name CloudSpawner
 ## Holds as keys areas, and as values lists of cloud drawers.
 var cloud_drawers: Dictionary = {}
 
-<<<<<<< Updated upstream
-=======
-func get_texture_for_area(area:Vector2i):
-	var abs_position=area.abs()
-	
-
->>>>>>> Stashed changes
 func _on_area_visibility_area_shown(area):
 	check_to_spawn(area)
 
