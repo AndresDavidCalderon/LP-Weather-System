@@ -20,6 +20,8 @@ var area:Vector2i = Vector2i.ZERO
 
 func _ready():
 	modulate.a=0
+	texture=texture.duplicate()
+	texture.noise = texture.noise.duplicate()
 	(texture as NoiseTexture2D).noise.seed=randi()
 	update_size()
 	await texture.changed
@@ -34,5 +36,5 @@ func update_size():
 
 func show_clouds(_area)->void:
 	var amount_of_water=humidity.get_saturated_water(area)
-	get_tree().create_tween().tween_property(self,"modulate:a",clamp((amount_of_water/max_humidity),0,100),0.5)
+	get_tree().create_tween().tween_property(self,"modulate:a",clamp((amount_of_water/max_humidity),0,1),0.5)
 
